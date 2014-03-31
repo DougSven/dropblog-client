@@ -1,6 +1,6 @@
 'use strict';
 
-/* Directives */
+/* Directives Currently Not Used */
 
 
 angular.module('myApp.directives', []).

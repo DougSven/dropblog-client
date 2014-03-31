@@ -1,6 +1,6 @@
 'use strict';
 
-/* Services */
+/* Services  Currently Not Used */
 
 
 // Demonstrate how to register services

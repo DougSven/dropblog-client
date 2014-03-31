@@ -13,7 +13,7 @@
   <meta name="author" content="">
   <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
   <!-- Bootstrap core CSS -->
-  <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="css/blog.css" rel="stylesheet">
@@ -32,19 +32,14 @@
 <body>
   <div class="blog-masthead">
     <div class="container">
-      <nav class="blog-nav">
-        <a class="blog-nav-item active" href="#/posts">Home</a>
-        <a class="blog-nav-item" href="#">New features</a>
-        <a class="blog-nav-item" href="#">Press</a>
-        <a class="blog-nav-item" href="#">New hires</a>
-        <a class="blog-nav-item" href="#">About</a>
+      <nav class="blog-nav" ng-controller="NavCtrl">
+        <a class="blog-nav-item" ng-class="{ active: isActive('/posts')}" href="#/posts">Home</a>
+        <a class="blog-nav-item" ng-class="{ active: isActive('/admin')}" href="#/admin">Admin</a>
       </nav>
     </div>
   </div>
 
   <div ng-view></div>
-
-  <div>Angular seed app: v<span app-version></span></div>
 
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
