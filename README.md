@@ -3,9 +3,9 @@
 Bootstrapped off of Angular-Seed. This is an AngularJS client app utilizing Restangular for REST calls.
 
 
-### Getting started
+## Setup
 
-We have two kinds of dependencies in this project: tools and angular framework code.  The tools help
+There are two kinds of dependencies in this project: tools and angular framework code.  The tools help
 us manage and test the application.
 
 * We get the tools we depend upon via `npm`, the [node package manager][npm].
@@ -23,18 +23,26 @@ folders in your project.
 * `node_modules` - contains the npm packages for the tools we need
 * `bower_components` - contains the angular framework files
 
-### Run the Application
+## Running the Application
 
-We have preconfigured the project with a simple development web server.  The simplest way to start
+The project is configured with a simple development web server.  The simplest way to start
 this server is:
 
 ```
 npm start
 ```
 
-Now browse to the app at `http://localhost:8000/app/index.html`.
+Now browse to the app at `http://localhost:8000/app/index.html#/posts`.
 
-
+## Additional Considerations
+* Add unit test coverage
+* Add user login - Remove temporary hardcode from RestangularProvider
+* SSL for Admin page.
+* Restrict Admin access to logged in users
+* Add error handling for REST calls.
+* Ensure sanitization of back end data.
+* Add input validation/sanitiaztion.
+* Allow for stylized input. Markdown or something similar?
 
 ## Directory Layout
 
